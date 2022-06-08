@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function ShowData({ dataList }) {
+export default function ShowData(prop) {
   return (
     <div>
-      {dataList.map((item, index) => {
+      {prop.dataList.map((item, index) => {
         return (
           <li key={index}>
-            {index}  -- 
-            {item.id} -- 
-            {item.name} -- 
+            {index} :=--
+            {item.id} --
+            {item.name} --
             {item.url}
           </li>
         );
