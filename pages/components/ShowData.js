@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ShowData(prop = { dataList: [{}] }) {
+export default function ShowData({ dataList }) {
   return (
     <div>
-      {prop.dataList.map((item, index) => {
+      {dataList.map((item, index) => {
         return (
           <li key={index}>
             {index} :=--
