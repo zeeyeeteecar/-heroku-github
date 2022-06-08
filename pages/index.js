@@ -24,7 +24,8 @@ export default function Index() {
 
   return (
     <div>
-      <ShowData dataList={dataList} />
+      index, index
+      {/* <ShowData dataList={dataList} /> */}
     </div>
   );
 }
