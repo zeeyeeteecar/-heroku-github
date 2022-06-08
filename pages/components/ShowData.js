@@ -6,7 +6,7 @@ export default function ShowData({ dataList }) {
       {dataList.map((item, index) => {
         return (
           <li key={index}>
-            {index} :=--
+            {index} --
             {item.id} --
             {item.name} --
             {item.url}
