@@ -22,12 +22,11 @@ export default function Index() {
       });
   }, []);
 
-  const dataListArr = [...dataList];
 
   return (
     <div>
       index, index
-      {<ShowData dataList={dataListArr} />}
+      {<ShowData dataList={dataList} />}
     </div>
   );
 }
