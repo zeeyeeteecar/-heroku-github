@@ -1,8 +1,8 @@
 import React from "react";
 
-// interface Props  {
-//   dataList: [{id: string; name: string; url: string}];
-// };
+type Props = {
+  dataList: [{ id: string; name: string; url: string }];
+};
 
 export default function ShowData({ dataList }) {
   return (
