@@ -1,11 +1,11 @@
 import React from "react";
 
-export interface Props {
+export interface PropsType {
   dataList: [{ id: string; name: string; url: string }];
 }
 
-//export default function ShowData({ dataList }: Props) {
-const ShowData: React.FC<Props> = ({ dataList }) => {
+export default function ShowData({ dataList }: PropsType) {
+//const ShowData: React.FC<Props> = ({ dataList }) => {
   return (
     <div>
       {dataList.map((item, index) => {
@@ -22,4 +22,4 @@ const ShowData: React.FC<Props> = ({ dataList }) => {
   );
 };
 
-export default ShowData;
+//export default ShowData;

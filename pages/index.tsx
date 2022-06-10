@@ -9,7 +9,7 @@ interface Props {
 export default function Index() {
   const [dataList, setDataList] = React.useState<
     [{ id: string; name: string; url: string }]
-  >([{ id: "", name: "", url: "" }]);
+  >([{ id: null, name: null, url: null }]);
 
   React.useEffect(() => {
     axios
