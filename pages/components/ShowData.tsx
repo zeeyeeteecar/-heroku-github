@@ -1,6 +1,10 @@
 import React from "react";
 
-export default function ShowData({ dataList }) {
+interface Props  {
+  dataList: [{id: string; name: string; url: string}];
+};
+
+export default function ShowData({ dataList }: Props) {
   return (
     <div>
       {dataList.map((item, index) => {
