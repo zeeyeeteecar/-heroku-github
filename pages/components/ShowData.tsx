@@ -9,7 +9,7 @@ export default function ShowData({ dataList }: PropsType) {
   //const ShowData: React.FC<Props> = ({ dataList }) => {
   return (
     <div>
-      {dataList && dataList.map((item, index) => {
+      {dataList.map((item, index) => {
         return (
           <li key={index}>
             {index} --
