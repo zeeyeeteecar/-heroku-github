@@ -5,21 +5,22 @@ export interface PropsType {
 }
 
 export default function ShowData({ dataList }: PropsType) {
-//const ShowData: React.FC<Props> = ({ dataList }) => {
+  //const ShowData: React.FC<Props> = ({ dataList }) => {
   return (
     <div>
-      {dataList.map((item, index) => {
-        return (
-          <li key={index}>
-            {index} --
-            {item.id} --
-            {item.name} --
-            {item.url}
-          </li>
-        );
-      })}
+      {dataList &&
+        dataList.map((item, index) => {
+          return (
+            <li key={index}>
+              {index} --
+              {item.id} --
+              {item.name} --
+              {item.url}
+            </li>
+          );
+        })}
     </div>
   );
-};
+}
 
 //export default ShowData;
