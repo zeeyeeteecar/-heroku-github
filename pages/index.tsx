@@ -2,8 +2,14 @@ import React from "react";
 import axios from "axios";
 import ShowData from "./components/ShowData";
 
+interface Props {
+  dataList: [{ id: string; name: string; url: string }];
+}
+
 export default function Index() {
-  const [dataList, setDataList] = React.useState([]);
+  const [dataList, setDataList] = React.useState<
+    [{ id: string; name: string; url: string }]
+  >([{ id: "", name: "", url: "" }]);
 
   React.useEffect(() => {
     axios
