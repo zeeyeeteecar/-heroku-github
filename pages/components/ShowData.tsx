@@ -1,10 +1,6 @@
 import React from "react";
 
-type Props = {
-  dataList: string[];
-};
-
-export default function ShowData({ dataList }: Props) {
+export default function ShowData({ dataList }) {
   return (
     <div>
       {dataList.map((item, index) => {
