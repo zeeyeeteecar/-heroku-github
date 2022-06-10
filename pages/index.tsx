@@ -22,10 +22,9 @@ export default function Index() {
       });
   }, []);
 
-
   return (
     <div>
-      index, index
+      index, index, index
       {<ShowData dataList={dataList} />}
     </div>
   );
