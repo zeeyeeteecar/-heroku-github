@@ -35,7 +35,7 @@ export default function Index() {
   }, []);
 
   function handle_click_for_pic(e) {
-    console.log(e);
+    //console.log(e);
     setImgUrl(e);
   }
 

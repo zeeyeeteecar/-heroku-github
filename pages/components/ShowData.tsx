@@ -12,19 +12,18 @@ export default function ShowData({ dataList, handle_click_for_pic }) {
   //const ShowData: React.FC<Props> = ({ dataList }) => {
   return (
     <div>
-      {dataList &&
-        dataList.map((item, index) => {
-          return (
-            <li key={index + 1}>
-              {index + 1} -{item.id} -{item.name} -
-              <IconButton
-                aria-label="Search database"
-                icon={<SearchIcon />}
-                onClick={(e) => handle_click_for_pic(item.url)}
-              />
-            </li>
-          );
-        })}
+      {dataList.map((item, index) => {
+        return (
+          <li key={index + 1}>
+            {index + 1} -{item.id} -{item.name} -
+            <IconButton
+              aria-label="Search database"
+              icon={<SearchIcon />}
+              onClick={(e) => handle_click_for_pic(item.url)}
+            />
+          </li>
+        );
+      })}
     </div>
   );
 }
